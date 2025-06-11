@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index Website Desa Serdang</title>
+  <title>Tentang Desa Serdang</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/Lambang_Kabupaten_Bangka_Selatan.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -26,6 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Nova
@@ -36,21 +37,22 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="about-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/Lambang_Kabupaten_Bangka_Selatan.png" alt="">
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+         <img src="assets/img/Lambang_Kabupaten_Bangka_Selatan.png" alt="">
         <h1 class="sitename">Desa Serdang</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.php" class="active">Beranda<br></a></li>
-          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="index.php">Beranda<br></a></li>
+          <li><a href="tentang.html" class="active">Tentang</a></li>
           <li><a href="aparatur.html">Aparatur</a></li>
           <li><a href="berita.php">Berita</a></li>
           <li class="dropdown"><a href="berita.php"><span>Kategori</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -70,28 +72,47 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/desa-serdang-gambar-tulisan-edited.png);">
+      <div class="container">
+        <h1>Tentang</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.php">Beranda</a></li>
+            <li class="current">Tentang</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
 
-      <img src="assets/img/tulisan-desa-serdang.png" alt="" data-aos="fade-in">
+    <!-- About Section -->
+    <section id="about" class="about section">
 
       <div class="container">
-        <div class="row">
-          <div class="col-xl-4">
-            <h1 data-aos="fade-up">Selamat Datang</h1>
-            <blockquote data-aos="fade-up" data-aos-delay="100">
-              <p>Website Desa Serdang</p>
-              <a>Kecamatan Toboali - Kabupaten Bangka Selatan - Kepulauan Bangka Belitung</a>
-            </blockquote>
-            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-              <a href="tentang.html" class="btn-get-started">Tentang Desa Serdang</a>
-              <a href="https://https://youtu.be/vTD6bUgUcTY?si=FF5KiNg87mF5Qqst" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Lihat Video</span></a>
+
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <img src="assets/img/panen-serdang-edited.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>PROFIL DESA SERDANG</h3>
+              <p>Desa Serdang berada di Kecamatan Toboali, Kabupaten Bangka Selatan - Kepulauan Bangka Belitung.</p>
+              <ul>
+                <li><i class="bi bi"></i> <span>Identitas Desa :</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Kode Desa	:	1903012004</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Kode Kec.	:	190301</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Kode Kab.	:	1903</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Kode Provinsi	:	19</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Kode Pos	:	33783</span></li>
+              </ul>
             </div>
           </div>
         </div>
+
       </div>
 
-    </section><!-- /Hero Section -->
+    </section><!-- /About Section -->
 
     <!-- Why Us Section -->
     <section id="why-us" class="why-us section">
@@ -211,53 +232,6 @@
 
     </section><!-- /Why Us Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Produk Unggulan</h2>
-        <p>Disini terdapat informasi produk unggulan khas Desa Serdang</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <!-- <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div> -->
-            <div>
-              <h4 class="title">Jeruk Limus</h4>
-              <p class="description">jeruk limus merupakan salah satu potensi yang ada di Desa Serdang</p>
-              <a href="https://www.tiktok.com/@pemdes.serdang/video/7382446321824697606" class="readmore stretched-link"><span>Tonton di Tiktok</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <!-- <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div> -->
-            <div>
-              <h4 class="title">Belacan Limus</h4>
-              <p class="description">proses pengolahan belacan limus belacan limus merupakan salah satu juga produk UMKM Desa Serdang</p>
-              <a href="https://www.tiktok.com/@pemdes.serdang/video/7382454945187925254" class="readmore stretched-link"><span>Tonton di Tiktok</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <!-- <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div> -->
-            <div>
-              <h4 class="title">Beras Serdang</h4>
-              <p class="description">Proses pengolahan beras desa serdang</p>
-              <a href="https://www.tiktok.com/@pemdes.serdang/video/7379760248887823622" class="readmore stretched-link"><span>Tonton di Tiktok</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
 
@@ -277,76 +251,157 @@
 
     </section><!-- /Call To Action Section -->
 
-    
-
-    </section><!-- /Features Section -->
-
-    <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Berita Desa</h2>
-
-      </div><!-- End Section Title -->
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
 
       <div class="container">
 
-        <div class="row gy-5">
+        <div class="row g-0">
 
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/berita1.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">22 Maret 2024</span>
-              </div>
-              <h3 class="post-title">Penyaluran Bansos BPNT / BLT Sembako</h3>
-              <p>pada tanggal 21 Maret 2024 Penyaluran Bansos BPNT/BLT Sembako alokasi Februari-Maret 2024 oleh petugas Pos...</p>
-              <a href="#" class="readmore stretched-link"><span>Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
-            </div>
+          <div class="col-xl-20 img-bg" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/maps-serdang.png" alt="">
           </div>
 
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/berita2 (2).jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">27 Maret 2024</span>
-              </div>
-              <h3 class="post-title">Penerima Bantuan Pangan Tahap III Alokasi Bulan Maret Tahun 2024</h3>
-              <p>Pada hari selasa tanggal 26 maret 2024 penyaluran Penerima Bantuan Pangan Tahap III Alokasi Bulan ...</p>
-              <a href="#" class="readmore stretched-link"><span>Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
+          <div class="col-xl-20 slides position-relative" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/berita3.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">10 Juni 2024</span>
-              </div>
-              <h3 class="post-title">Kegiatan Pendampingan Desa Batch 1 New Desa BRILiaN Tahun 2024</h3>
-              <p>pada hari ini tanggal 11 Juni 2024,  telah diadakannya kegiatan Pendampingan Desa BRILIAN ...</p>
-              <a href="#" class="readmore stretched-link"><span>Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "centeredSlides": true,
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "navigation": {
+                    "nextEl": ".swiper-button-next",
+                    "prevEl": ".swiper-button-prev"
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
 
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/berita4.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">12 Juni 2024</span>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Pengertian Bumdes</h3>
+                    <p>Badan Usaha Milik Desa ( Bumdes ) Kek Bathin merupakan Badan usaha Milik Desa yang dikelola oleh Pemerintah Desa sebagai sarana atau tempat untuk memasarkan hasil pertanian, produk unggulan desa serta mengembangkan sumber-sumber potensi yang ada di Desa Serdang. Bumdes Mengandung pengertian Bada Usaha yang seluruhnya atau sebagian besar modalnya dimiliki oleh Desa melalui penyertaan secara langsung yang berasal dari kekayaan Desa yang dipisahkan guna mengelola aset, jasa pelayanan dan uasaha lainnya untuk sebesar-besarnya kesejahteraan masyarakat Desa.</p>
+                    <p>Bumdes adalah badan usaha milik desa yang didirikan oleh masyarakat desa untuk meningkatkan perekonomian desa melalui pengelolaan sumber daya alam, potensi soSial, dan potensi ekonomi yang dimiliki oleh desa . Menurut undang-undang Nomor 11 Tahun 2020 Tentang Cipta Kerja, Badan Usaha Milik Desa ( Bumdes ) merupakan badan usaha yang didirikan dan dikelola oleh masyarakat Desa.</p>
+                  </div>
+                </div><!-- End slide item -->
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Dasar Hukum Bumdes</h3>
+                    <ul>
+                      <li>Perdes Desa Serdang Nomor 3 tahun 2017</li>
+                      <li>Undang-Undang Nomor 1 tahun 2013  Tentang Lembaga Keuangan Mikro</li>
+                      <li>Undang-Undang Nomor 6 tahun 2014  Tentang Desa</li>
+                      <li>Peraturan Pemerintah no 43 tahun 2014 Tentang Peraturan Pelaksanaan Undang-Undang  nomor 6 tahun 2014 Tentang Desa</li>
+                      <li>Peraturan Pemerintah Indonesia Republik Indonesia nomor 60 tahun 2014 Tentang Dana Desa yang bersumber Anggaran dan Pendapatan Belanja Negara</li>
+                      <li>Peraturan Presiden no 12 tahun 2015 Tentang Kementrian Desa, Pembangunan Daerah Tertinggal dan Transmigrasi</li>
+                      <li>Peraturan Mentri Desa PDTT nomor 4 tahun 2015 Tentang Badan Usaha Milik Desa</li>
+                      <li>Undang-Undang nomor 27 tahun 2000 tentang Pembentukan Provinsi Kepulauan Bangka Belitung</li>
+                      <li>Undang-Undang nomor 5 tahun 2003 Tentang Pembentukan Kabupaten Bangka Selatan, Kabupaten Bangka Tengah, Kabupaten Bangka Barat dan Kabupaten Belitung Timur di Provinsi Kepulauan Bangka Belitung</li>
+                      <li>Peraturan Daerah Kabupaten Bangka Selatan nomor 14 tahun 2008 Tentang Pembentukan Organisasi Lembaga Tehnik Daerah </li>   
+                    </ul>
+                  </div>
+                </div><!-- End slide item -->
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Maksud , Tujuan Dan Fungsi Bumdes  </h3>
+                    <p>Bumdes Kek Bathin Didirikan dan dibentuk untuk dapat berperan aktif dalam pendampingan kepada masyarakat dalam permodalan, pemasaran dan pengembangan potensi serta  usaha yang dimiliki masyarakat. Keberadaan Bumdes Kek Bathin diharapkan mampu membawa perubahan yang positif terhadap peningkatan perekonomian masyarakat desa dan sekitarnya. Melalui Bumdes A Kek Bathin hasil bumi dan produk unggulan Desa  dapat dipasarkan dengan berbagai cara antara lain melalui media online, langsung  ke komsumen maupun bekerja sama dengan pihak ketiga .</p>
+                    <p>Bumdes Kek Bathin memiliki fungsi sebagai sarana atau wadah bagi masyarakat atau pemerintah desa dalam memasarkan hasil produk unggulan desa, Potensi Desa guna meningkatkan sumber-sumber pendapatan asli Desa , meningkatkan perekonomian masyarakat serta  kesejahteraan  masyarakat setempat. Bumdes A Kek Bathin juga dapat berfungsi sebagai perantara dengan pihak ketiga dalam bertransaksi maupun dalam memasarkan hasil produksi milik masyarakat .</p>
+                  </div>
+                </div><!-- End slide item -->
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Apa sih tujuan pembentukan Bumdes di tingkat Desa</h3>
+                    <p>Masing-masing Desa memiliki sudut pandang yang berbeda dalam mengartikan maksud dan tujuan berdasarkan pola pikir atau mindset dalam mewujudkan kesejahteraan masyarakat serta meningkatkan sumber-sumber pendapatan asli desa . Bumdes  dapat berperan sebagai sarana untuk memasarkan hasil produk unggulan Desa dan pengembangan potensi desa , memiliki tujuan antara lain sebagai berikut:</p>
+                    <ul>
+                      <li>untuk meningkatkan ekonomi masyarakat yang bersifat mandiri di desa</li>
+                      <li>Meningkatkan Pendapatan asli Desa ( PAD )</li>
+                      <li>Meningkatkan uasaha masyarakat dalam pengelolaan potensi ekonomi desa</li>
+                      <li>Menciptakan lapangan kerja baru, dst</li>
+                    </ul>
+                  </div>
+                </div><!-- End slide item -->
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">STRUKTUR ORGANISASI BUMDES</h3>
+                    <p>Susunan Pengurus dan Pengawas BUMDes Kek Bathin</p>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>No</th>
+                          <th>Nama</th>
+                          <th>Jabatan</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>1.</td><td>Apendi</td><td>Komisaris</td></tr>
+                        <tr><td>2.</td><td>Dodi Syahrial</td><td>Ketua</td></tr>
+                        <tr><td>3.</td><td>Topik Hidayat</td><td>Sekretaris</td></tr>
+                        <tr><td>4.</td><td>Rizki Fadila</td><td>Bagian Keuangan</td></tr>
+                        <tr><td>5.</td><td>Zakir</td><td>Kepala Unit Usaha</td></tr>
+                        <tr><td>6.</td><td>Lazi</td><td>Koordinator Pengawas</td></tr>
+                        <tr><td>7.</td><td>H. Budi Nuranto</td><td>Anggota Pengawas</td></tr>
+                        <tr><td>8.</td><td>Toyo Yahya</td><td>Anggota Pengawas</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div><!-- End slide item -->
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Peran, Ruang Lingkup Dan Promosi</h3>
+                    <p>Bumdes Kek Bathin berada di ruang lingkup Pemerintahan Desa Serdang memiliki peran cukup penting bagi perkembangan desa. Bumdes Kek Bathin juga merupakan salah satu komponen yang ikut menentukan nilai indeks desa membangun, semakin tinggi nilai indeks Bumdesnya, semakin maju pula katagori bumdesnya, sehingga akan mempengaruhi nilai indeks desa membangun ( IDM ) Desa Serdang  secara signifikan pula. Peran Bumdes Kek Bathin sangat dibutuhkan oleh masyarakat desa dalam hal memasarkan hasil produk unggulan desa, home industry maupun usaha menengah kecil mikro ( UMKM ). Kedepannya diharapkan Bumdes tidak hanya berada pada ruang lingkup skala Desa saja akan tetapi diharapkan dapat menembus pangsa pasar yang lebih luas lagi.</p>
+                    <p>Peran Bumdes semakin nyata dengan adanya Program Pendampingan Desa Batch 1 New Desa BRILian Tahun 2024, perlu kita ketahui bahwa salah satu kreteria untuk mendapatkan program tersebut adalah memiliki Bumdes dengan kreteria pengelolaan yang baik, oleh karena itu keberadaan Bumdes Kek Bathin tidak boleh dipandang sebelah mata karena memilki peran penting dalam Sistem Pemerintahan Desa Serdang.</p>
+                    <p>Kehadiran Sisten Informasi Manajemen Desa ( SIMSA ) yang dimiliki oleh Pemerintah Desa Serdang membawa aura tersendiri sebagai sarana pelayanan administarasi desa, Trasparansi publik serta sebagai sarana informasi dan promosi potensi desa, produk unggulan desa, potensi wisata desa dan lain-lain. Bumdes  Kek Bathin dapat memanfatakan kehadiran Website Desa Serdang sebagai sarana promosi dan edukasi kepada masyarakat betapa pentingnya media online, media sosial dalam memasarkan hasil produk yang memiliki daya jual tinggi dan punya daya saing.</p>
+                  </div>
+                </div><!-- End slide item -->
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Produk Unggulan Desa</h3>
+                    <p>Salah satu tujuan dan fungsi Bumdes adalah meningkatkan pendapatan asli desa dan masyarakat serta  mengelola sumber–sumber potensi atau produk–produk unggulan desa  untuk dikembangkan dan di pasarkan. Seperti dengan desa lainnya desa Serdang juga memilki beberapa produk unggulan desa, antara lain :</p>
+                    <ul>
+                      <li>Jeruk Limus</li>
+                      <li>Belacan Limus</li>
+                      <li>Beras Serdang</li>
+                    </ul>
+                    <p>Dalam pengelolaan Bumdes perlu didukung dengan sistem manajemen yang baik serta sumber daya manusia yang memadai dalam mengembangkan potensi desa , produk unggulan desa serta promosi wisata desa. Selain sumber daya manusia ( SDM ) , sumber daya alam  ( SDA ) juga memiliki peranan yang sangat penting dalam pengelolaan bumdes terkait penggalian potensi desa yang mungkin dapat dikembangkan baik dari hasil produk tanaman, mineral, maupun bahan galian.</p>
+                  </div>
+                </div><!-- End slide item -->
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Manfaat</h3>
+                    <p>Keberadaan Bumdes A Kek Bathin diharaapkaan membawa manfaat bagi Pemerintah Desa ,dan Masyarakat sekitar, hal ini dapat terlaksana kalu Bumdes Kek Bathin di kelola secara maksimal dengan system manajemen yang baik serta didukung oleh Pemerintah Desa Serdang dan semua lembaga sertaa masyarakat setempat. Dengan Sistem pengelolaan yang baik, Bumdes Kek Bathin dapat membawa kebermanfaatan bagi masyaarakat tertutama dalam hal pemesaran produk hasil pertanian, produk rumaahan hingga pada UMKM. Manfaat lainnya adalah peningkatan pendapatan dan taraf hidup masyarakat setempat serta PAD bagi Pemerintah Desa Serdang</p>
+                  </div>
+                </div><!-- End slide item -->
+
               </div>
-              <h3 class="post-title">Pendampingan Desa Batch 1 New Desa BRILiaN Tahun 2024</h3>
-              <p>Pada hari ini Tanggal 12 Juni 2024, Rundown kegiatan Pendampingan Desa Batch 1 New Desa BRILiaN ...</p>
-              <a href="#" class="readmore stretched-link"><span>Baca Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
+              <div class="swiper-pagination"></div>
             </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Recent Posts Section -->
+    </section><!-- /Why Us Section -->
 
   </main>
 
@@ -425,7 +480,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>

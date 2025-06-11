@@ -1,0 +1,24 @@
+.about-foto-aparatur{
+    background-color: white;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  min-height: 50px; /* atur sesuai kebutuhan */
+}
+
+.card-text {
+  flex-grow: 1;
+  min-height: 60px; /* supaya tinggi seragam */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
